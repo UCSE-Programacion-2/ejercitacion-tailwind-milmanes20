@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Sobre el curso</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body class="bg-gray-200 text-blue-200 font-sans m-0 flex flex-col min-h-screen">
     <header class="bg-slate-900 text-slate-200 border-b border-solid border-[#1e293b]" >
-      <div class="w-[min(1100px,92%)] m-auto flex itens-center justify-between m-4 py-4 px-0">
+      <div class="w-[min(1100px,92%)] my-0 mx-auto flex itens-center justify-between m-4 py-4 px-0">
         <a class=" text-slate-200 text-decoration-none font-bold   " href="../index.html">Tailwind Labs</a>
         <nav class="flex gap-4 flex-wrap">
           <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="../index.html">Inicio</a>
@@ -20,41 +19,41 @@
       </div>
     </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Sobre esta practica</h1>
-          <p>
+    <main class="flex-1">
+      <section class="w-[min(1100px,92%)] my-0 mx-auto py-[2.25rem] px-0 ">
+        <div class="bg-white p-[2.25rem] rounded-[0.9rem] border border-[#cbd5e1] border-solid ">
+          <h1 class="m-0 text-slate-900 text-xl">Sobre esta practica</h1>
+          <p class="text-slate-600 m-[0.6rem 0 0]" >
           Esta pagina entrena composicion con bloques, tipografia y grillas responsive.
           Deberias reutilizar patrones visuales del home para mantener consistencia.
           </p>
         </div>
 
-        <div id="stats-grid" class="stats-grid">
-          <article class="stat-card">
-            <p class="stat-label">Duracion sugerida</p>
-            <p class="stat-value">90 min</p>
+        <div class="grid mt-[1.4rem] gap-4 min-[700px]:grid-cols-2 min-[980px]:grid-cols-4 ">
+          <article class="bg-white p-4 rounded-[0.9rem] border border-[#cbd5e1] border-solid ">
+            <p class="text-[#64748b] text-[0.9rem] m-0">Duracion sugerida</p>
+            <p class="mt-[0.4rem] m-0 text-slate-900 font-bold text-[1.8rem] ">90 min</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Paginas a trabajar</p>
-            <p class="stat-value">4</p>
+          <article class="bg-white p-4 rounded-[0.9rem] border border-[#cbd5e1] border-solid ">
+            <p class="text-[#64748b] text-[0.9rem] m-0">Paginas a trabajar</p>
+            <p class="mt-[0.4rem] m-0 text-slate-900 font-bold text-[1.8rem] ">4</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Utilidades esperadas</p>
-            <p class="stat-value">20+</p>
+          <article  class="bg-white p-4 rounded-[0.9rem] border border-[#cbd5e1] border-solid ">
+            <p class="text-[#64748b] text-[0.9rem] m-0">Utilidades esperadas</p>
+            <p class="mt-[0.4rem] m-0 text-slate-900 font-bold text-[1.8rem] ">20+</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Resultado</p>
-            <p class="stat-value">Deploy listo</p>
+          <article class="bg-white p-4 rounded-[0.9rem] border border-[#cbd5e1] border-solid ">
+            <p class="text-[#64748b] text-[0.9rem] m-0">Resultado</p>
+            <p class="mt-[0.4rem] m-0 text-slate-900 font-bold text-[1.8rem] ">Deploy listo</p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
+    <footer class="bg-white text-slate-600 border-t border-solid border-[#1e293b] py-[1rem] px-0 text-[0.92rem]">
+      <div class="w-[min(1100px,92%)] my-0 mx-auto flex justify-between gap[0.5rem] flex-wrap">
         <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+        <p class="font-[700] ">Desarrollado por Marco Castillo Cabrera</p>
       </div>
     </footer>
   </body>
