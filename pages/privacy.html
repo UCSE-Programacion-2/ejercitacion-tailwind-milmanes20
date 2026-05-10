@@ -4,55 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Privacidad</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
-          <a href="../index.html">Inicio</a>
-          <a href="./about.html">Sobre el curso</a>
-          <a href="./faq.html">FAQ</a>
-          <a class="is-active" href="./privacy.html">Privacidad</a>
+  <body class="bg-gray-200 text-blue-200 font-sans m-0 flex flex-col min-h-screen"> <!--class="site-body"-->
+    <header
+      class="bg-slate-900 text-slate-200 border-b border-solid border-[#1e293b]"
+    > <!--class="site-header"-->
+      <div
+        class="w-[min(1100px,92%)] my-0 mx-auto flex itens-center justify-between m-4 py-4 px-0"
+      >
+        <a
+          class="text-slate-200 text-decoration-none font-bold"
+          href="../index.html"
+          >Tailwind Labs</a
+        >
+        <nav id="menu-principal" class="flex gap-4 flex-wrap">
+          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="../index.html">Inicio</a>
+          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="./about.html">Sobre el curso</a>
+          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="./faq.html">FAQ</a>
+          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="./privacy.html">Privacidad</a>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Politica de privacidad</h1>
-          <p>
+    <main class="flex-1"> <!--class="site-main"-->
+      <section class="w-[min(1100px,92%)] my-0 mx-auto py-[2.25rem] px-0 ">
+        <div class="bg-white p-[2.25rem] rounded-[0.9rem] border border-[#cbd5e1] border-solid ">
+          <h1 class="m-0 text-[#0f172a] text-xl">Politica de privacidad</h1>
+          <p class="text-slate-600 m-[0.6rem 0 0]" >
           Esta pagina sirve para practicar bloques informativos, listas y estilos con jerarquia visual.
           </p>
         </div>
 
-        <div id="privacy-cards" class="privacy-cards">
-          <article class="privacy-card">
-            <h2>Datos recopilados</h2>
-            <ul>
-              <li>Nombre y apellido</li>
-              <li>Correo electronico institucional</li>
-              <li>Actividad dentro del campus</li>
+        <div id="privacy-cards" class="grid mt-[1.4rem] gap-4 min-[700px]:grid-cols-2 "> <!--class="privacy-cards"-->
+          <article class="bg-white p-4 rounded-[0.9rem] border border-[#cbd5e1] border-solid shadow-[0_2px_8px_rgba(15,23,42,0.08)]"> <!--class="privacy-card"-->
+            <h2 class="m-0 text-[1.1rem] text-[#0f172a]">Datos recopilados</h2> <!--class="privacy-card-title"-->
+            <ul class=" list-disc pl-[1.2rem] mt-[0.7rem]" > <!--class="privacy-card-list"-->
+              <li class="text-[#475569] mt-[0.35rem]">Nombre y apellido</li>
+              <li class="text-[#475569] mt-[0.35rem]">Correo electronico institucional</li>
+              <li class="text-[#475569] mt-[0.35rem]">Actividad dentro del campus</li>
             </ul>
           </article>
-          <article class="privacy-card">
-            <h2>Uso de la informacion</h2>
-            <ul>
-              <li>Seguimiento de progreso academico</li>
-              <li>Feedback personalizado de actividades</li>
-              <li>Comunicacion de novedades del curso</li>
+          <article class="bg-white p-4 rounded-[0.9rem] border border-[#cbd5e1] border-solid shadow-[0_2px_8px_rgba(15,23,42,0.08)]"> <!--class="privacy-card"-->
+            <h2 class="m-0 text-[1.1rem] text-[#0f172a]">Uso de la informacion</h2>
+            <ul class=" list-disc pl-[1.2rem] mt-[0.7rem]" > <!--class="privacy-card-list"-->
+              <li class="text-[#475569] mt-[0.35rem]">Seguimiento de progreso academico</li>
+              <li class="text-[#475569] mt-[0.35rem]">Feedback personalizado de actividades</li>
+              <li class="text-[#475569] mt-[0.35rem]">Comunicacion de novedades del curso</li>
             </ul>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
+    <footer class="bg-white text-slate-600 border-t border-solid border-[#1e293b] py-[1rem] px-0 text-[0.92rem]">
+      <div class="w-[min(1100px,92%)] my-0 mx-auto flex justify-between gap[0.5rem] flex-wrap">
         <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+        <p class="font-[700] ">Desarrollado por Marco Castillo Cabrera</p>
       </div>
     </footer>
   </body>

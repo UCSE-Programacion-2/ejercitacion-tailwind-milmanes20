@@ -145,7 +145,7 @@ body {
 .faq-head h1 {
   margin: 0;
   color: #0f172a;
-  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  font-size: clamp(1.4rem, 2.4vw, 1rem);
 }
 
 .section-intro {
