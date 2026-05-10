@@ -7,46 +7,88 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-200 text-blue-200 font-sans m-0 flex flex-col min-h-screen">
-    <header class="bg-slate-900 text-slate-200 border-b border-solid border-[#1e293b]" >
-      <div class="w-[min(1100px,92%)] my-0 mx-auto flex itens-center justify-between m-4 py-4 px-0">
-        <a class=" text-slate-200 text-decoration-none font-bold   " href="../index.html">Tailwind Labs</a>
+  <body
+    class="bg-gray-200 text-blue-200 font-sans m-0 flex flex-col min-h-screen"
+  >
+    <header
+      class="bg-slate-900 text-slate-200 border-b border-solid border-[#1e293b]"
+    >
+      <div
+        class="w-[min(1100px,92%)] my-0 mx-auto flex itens-center justify-between m-4 py-4 px-0"
+      >
+        <a
+          class="text-slate-200 text-decoration-none font-bold"
+          href="../index.html"
+          >Tailwind Labs</a
+        >
         <nav class="flex gap-4 flex-wrap">
-          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="../index.html">Inicio</a>
-          <a class=" rounded-[0.4rem] text-[0.95rem] text-cyan-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="./about.html">Sobre el curso</a>
-          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="./faq.html">FAQ</a>
-          <a class=" rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300   " href="./privacy.html">Privacidad</a>
+          <a
+            class="rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300"
+            href="../index.html"
+            >Inicio</a
+          >
+          <a
+            class="rounded-[0.4rem] text-[0.95rem] text-cyan-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300"
+            href="./about.html"
+            >Sobre el curso</a
+          >
+          <a
+            class="rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300"
+            href="./faq.html"
+            >FAQ</a
+          >
+          <a
+            class="rounded-[0.4rem] text-[0.95rem] text-slate-300 p-[0.3rem_0.45rem] transition delay-200 duration-200 ease-in-out hover:bg-[rgba(255,255,255,0.06)] hover:text-cyan-300"
+            href="./privacy.html"
+            >Privacidad</a
+          >
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="faq-shell">
-          <div class="faq-head">
-            <h1>Preguntas frecuentes</h1>
-            <p>
-            Practica utilidades de espaciado, borde, color, tipografia y estados hover/focus.
+    <main class="flex-1 py-10">
+      <section class="max-w-[1100px] w-[92%] mx-auto">
+        <div
+          class="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden"
+        >
+          <div class="p-6 border-b border-slate-200">
+            <h1 class="text-2xl font-bold text-slate-900">
+              Preguntas frecuentes
+            </h1>
+            <p class="mt-2 text-slate-600">
+              Practica utilidades de espaciado, borde, color, tipografía y
+              estados hover/focus.
             </p>
           </div>
 
-          <div id="faq-list" class="faq-list">
-            <article class="faq-item">
-              <h2>¿Debo usar CSS personalizado?</h2>
-              <p>
-                En la entrega final no. Debes traducir los estilos de esta base a utilidades de Tailwind.
+          <div id="faq-list" class="divide-y divide-slate-200">
+            <article class="p-6 transition duration-200 hover:bg-slate-50">
+              <h2 class="text-lg font-semibold text-slate-900">
+                ¿Debo usar CSS personalizado?
+              </h2>
+              <p class="mt-2 text-slate-600 leading-relaxed">
+                En la entrega final no. Debes traducir los estilos de esta base
+                a utilidades de Tailwind.
               </p>
             </article>
-            <article class="faq-item">
-              <h2>¿Que evaluan los tests automaticos?</h2>
-              <p>
-                Estructura, presencia de Tailwind, eliminacion del enlace CSS y utilidades clave.
+
+            <article class="p-6 transition duration-200 hover:bg-slate-50">
+              <h2 class="text-lg font-semibold text-slate-900">
+                ¿Qué evalúan los tests automáticos?
+              </h2>
+              <p class="mt-2 text-slate-600 leading-relaxed">
+                Estructura, presencia de Tailwind, eliminación del enlace CSS y
+                utilidades clave.
               </p>
             </article>
-            <article class="faq-item">
-              <h2>¿La correccion docente sigue existiendo?</h2>
-              <p>
-                Si. El docente valida calidad visual, coherencia y buenas practicas.
+
+            <article class="p-6 transition duration-200 hover:bg-slate-50">
+              <h2 class="text-lg font-semibold text-slate-900">
+                ¿La corrección docente sigue existiendo?
+              </h2>
+              <p class="mt-2 text-slate-600 leading-relaxed">
+                Sí. El docente valida calidad visual, coherencia y buenas
+                prácticas.
               </p>
             </article>
           </div>
@@ -54,10 +96,14 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
+    <footer
+      class="bg-white text-slate-600 border-t border-solid border-[#1e293b] py-[1rem] px-0 text-[0.92rem]"
+    >
+      <div
+        class="w-[min(1100px,92%)] my-0 mx-auto flex justify-between gap[0.5rem] flex-wrap"
+      >
         <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+        <p class="font-[700]">Desarrollado por Marco Castillo</p>
       </div>
     </footer>
   </body>
